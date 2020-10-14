@@ -1,0 +1,184 @@
+@import url('https://fonts.google.com/specimen/Spartan');
+
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    font-family: 'Spartan', Arial, Helvetica, sans-serif;
+    background: url(images/bg-pattern-top-desktop.svg) no-repeat, url(images/bg-pattern-bottom-desktop.svg) no-repeat 100% 0%;
+}
+p{
+  line-height: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "areaOne"
+      "areTwo";
+  }
+  .areaOne {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "areaOOne areaOTwo";
+    grid-area: areaOne;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 100px;
+  }
+  .areaOOne { grid-area: areaOOne;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 40px;
+ }
+ .presentation{
+     width: 400px;
+ }
+  .areaOTwo { 
+grid-area: areaOTwo;
+display: flex;
+justify-content: center;
+flex-direction: column; 
+align-items: center;
+}
+
+
+  .grid-containerTwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "stars magazine";
+      width: 450px;
+      background-color: hsl(300, 24%, 96%);
+      height: 45px;
+      margin: 15px;
+      border-radius: 10px;
+      position: relative;
+      margin-right: 300px;
+
+  }
+  .stars { 
+            grid-area: stars; 
+            width: 150PX;
+            margin-left: 20PX;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;}
+  .magazine { 
+            grid-area: magazine;
+            width: 300px; 
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            color: hsl(300, 43%, 22%);
+            font-weight: 700;
+            font-size: 15px;
+
+        }
+
+        #two{
+            margin-left: 100px;
+        }
+
+    #three{
+        margin-left: 200px;
+    }
+  img { 
+    object-fit: contain;
+  }
+
+  h1{
+      font-weight: 700;
+      color: hsl(300, 43%, 22%);
+      font-size: 3rem;
+  }
+
+  .pref{
+        margin-top: 20px;
+        font-size: 15px;
+        color: hsl(303, 10%, 53%);
+  }
+
+  .areTwo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-area: areTwo;
+  }
+
+  .grid-containerThree {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "name"
+      "des";
+      width: 420px;
+      height: 250px;
+      background-color: hsl(300, 43%, 22%);
+      border-radius: 5px;
+  }
+
+  .marre {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 100px;
+  }
+  .name { grid-area: name; }
+  .des { grid-area: des; }
+
+  .profil{
+    color: white;
+    display: flex;
+    justify-content: start;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .profil > img {
+    border-radius: 60px;
+    height: 100%;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .verified{
+    margin-top: 3px;
+    color: hsl(333, 80%, 67%);
+    font-weight: 400;
+    opacity: 0.8;
+  }
+
+  .des{
+    width: 320px;
+    margin-left: 40px;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  #ir{
+    margin-top: 20px;
+  }
+
+#aw{
+  margin-top: 40px;
+}
